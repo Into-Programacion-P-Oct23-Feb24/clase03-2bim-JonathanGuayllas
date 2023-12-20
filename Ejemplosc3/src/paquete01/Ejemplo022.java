@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo02 {
+public class Ejemplo022 {
 
     /**
      * @param args the command line arguments
@@ -32,11 +32,14 @@ public class Ejemplo02 {
         for (int f = 0; f < arreglo1.length; f++) {
             for (int c = 0; c < arreglo1[f].length; c++) {
                 System.out.printf("Ingrese numero para la posición [%d]"
-                        + "[%d]:",
+                        + "[%d]:\n",
                         f,
                         c);
                 numero = entrada.nextInt();
                 arreglo1[f][c] = numero;
+                if (numero >= 10 && numero%2 == 0){
+                    arreglo1[f][c] = 0;
+                }
             }
 
             for (int fila = 0; fila < arreglo1.length; fila++) {
