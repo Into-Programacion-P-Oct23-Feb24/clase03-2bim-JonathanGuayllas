@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package paquete05;
+
 /**
  *
  * @author LAB.ELECT
@@ -16,14 +17,20 @@ public class Ejemplo002 {
         // arreglos
         int suma = 0;
         // se suman los valores de los arreglos de los elementos seleccionados
-        suma = suma + arreglo[0][0] + arreglo[1][1] + arreglo[2][2];
-        // presento la suma total
-        System.out.printf("%d\n", suma);
-        /*
+        for (int f = 0; f < arreglo.length; f++) {
+            for (int c = 0; c < arreglo[f].length; c++) {
+                if (f == c) {
+                    suma = suma + arreglo[f][c];
+                }
+                // presento la suma total
+                /*
           Para resolver este ejercicio primero creamos un arreglo y le damos sus
           respectivos valores, posteriormente creamos una variable suma que 
           guarde la suma de los elementos del arreglo en la posición deseada
           y presentamos en pantalla
-        */
+                 */
+            }
+        }
+        System.out.printf("%d\n", suma);
     }
 }
